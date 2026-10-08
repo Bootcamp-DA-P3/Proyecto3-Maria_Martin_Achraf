@@ -58,7 +58,7 @@ def ejecutar_etl():
         df.to_csv(ruta_csv, index=False, encoding='utf-8')
         print(f"  ✅ Éxito: {filas_totales} filas exportadas a {ruta_csv}")
         
-        # Guardamos el registro de éxito
+        # Guardamos el registro de éxito, SI ESTO FUNCIONA Y SALE EN GITHUB, YO, MARTÍN, LO HE HECHO BIEN.
         resultados[nombre_archivo] = (filas_totales, ruta_csv)
 
     print("\nETL Finalizado.")
